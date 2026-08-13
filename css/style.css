@@ -282,31 +282,6 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   filter: grayscale(100%) contrast(1.05);
 }
 
-.scroll-indicator {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 26px;
-  height: 42px;
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  padding-top: 8px;
-}
-.scroll-indicator span {
-  width: 4px;
-  height: 8px;
-  background: var(--text);
-  border-radius: 4px;
-  animation: scrollDown 1.8s ease infinite;
-}
-@keyframes scrollDown {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(12px); opacity: 0; }
-}
-
 /* ============================
    SECTION TITLES
 ============================ */
