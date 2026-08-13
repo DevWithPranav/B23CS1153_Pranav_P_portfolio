@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <rect width="400" height="225" fill="#0a0a0a"/>
+  <g stroke="#262626" stroke-width="1">
+    <line x1="0" y1="56" x2="400" y2="56"/>
+    <line x1="0" y1="112" x2="400" y2="112"/>
+    <line x1="0" y1="168" x2="400" y2="168"/>
+    <line x1="100" y1="0" x2="100" y2="225"/>
+    <line x1="200" y1="0" x2="200" y2="225"/>
+    <line x1="300" y1="0" x2="300" y2="225"/>
+  </g>
+  <rect x="155" y="65" width="90" height="66" rx="18" fill="none" stroke="#f5f5f5" stroke-width="2"/>
+  <circle cx="182" cy="98" r="6" fill="#f5f5f5"/>
+  <circle cx="218" cy="98" r="6" fill="#f5f5f5"/>
+  <line x1="200" y1="65" x2="200" y2="48" stroke="#f5f5f5" stroke-width="2"/>
+  <circle cx="200" cy="44" r="4" fill="#f5f5f5"/>
+  <text x="200" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="14" letter-spacing="3" fill="#a3a3a3">ECHO DISCORD</text>
+</svg>

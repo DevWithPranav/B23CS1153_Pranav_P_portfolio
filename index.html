@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pranav — Full Stack Developer</title>
+<meta name="description" content="Portfolio of Pranav, Full Stack Developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="logo">PRANAV<span>.</span></a>
+
+    <nav class="nav" id="nav">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#internship" class="nav-link">Internship</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-dot"></span>
+      </button>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text" data-reveal>
+        <p class="eyebrow">Hi, my name is</p>
+        <h1>Pranav</h1>
+        <h2 class="hero-role"><span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span></h2>
+        <p class="hero-desc">
+          I design and build clean, functional web experiences —
+          from pixel-perfect interfaces to solid back-end systems.
+          Currently focused on crafting fast, accessible products.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-photo" data-reveal>
+        <div class="photo-frame">
+          <img src="images/WhatsApp_Image_2026-03-15_at_8.44.41_PM-removebg-preview.png" alt="Portrait of Pranav">
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <h3 class="section-title" data-reveal><span class="num">01.</span> About Me</h3>
+
+      <div class="about-grid">
+        <div class="about-text" data-reveal>
+          <p>
+            I'm a full stack developer who enjoys turning ideas into
+            fast, well-crafted products. I care about clean code,
+            thoughtful design, and details that make software feel
+            effortless to use.
+          </p>
+          <p>
+            Whether it's a small landing page or a full application,
+            I approach every project with the same focus: simplicity,
+            performance, and a strong visual identity.
+          </p>
+          <p>When I'm not coding, I'm usually exploring new tools, sketching UI ideas, or learning something outside of tech entirely.</p>
+        </div>
+
+        <div class="about-stats" data-reveal>
+          <div class="stat">
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="27">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="31">0</span>
+            <span class="stat-label">GitHub Repositories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h3 class="section-title" data-reveal><span class="num">02.</span> Skills</h3>
+
+      <div class="skills-panel" data-reveal>
+        <div class="tabs-nav" role="tablist">
+          <button class="tab-btn active" data-tab="frontend" role="tab">Frontend</button>
+          <button class="tab-btn" data-tab="backend" role="tab">Backend</button>
+          <button class="tab-btn" data-tab="tools" role="tab">Tools</button>
+          <button class="tab-btn" data-tab="other" role="tab">Other</button>
+        </div>
+
+        <!--
+          Each tab panel is a <dl> (description list) pairing a skill (dt)
+          with its proficiency (dd). Rows are rendered into these panels
+          by js/script.js from the skillsData array — see renderSkills().
+        -->
+        <div class="tabs-panels">
+          <dl class="tab-panel skills-list active" data-panel="frontend" role="tabpanel"></dl>
+          <dl class="tab-panel skills-list" data-panel="backend" role="tabpanel"></dl>
+          <dl class="tab-panel skills-list" data-panel="tools" role="tabpanel"></dl>
+          <dl class="tab-panel skills-list" data-panel="other" role="tabpanel"></dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERNSHIP -->
+  <section class="internship" id="internship">
+    <div class="container">
+      <h3 class="section-title" data-reveal><span class="num">03.</span> Internship</h3>
+
+      <article class="exp-card" data-reveal>
+        <aside class="exp-meta">
+          <span class="exp-period">2026 — Present</span>
+          <span class="exp-type">Internship</span>
+        </aside>
+
+        <div class="exp-body">
+          <h4>Backend Development Intern</h4>
+          <p class="exp-org">
+            <a href="https://github.com/gtech-mulearn/mulearnbackend" target="_blank" rel="noopener noreferrer">µLearn</a>
+            — GTech µLearn Platform
+          </p>
+
+          <p class="exp-story">
+            µLearn is a large open-source ed-tech platform built on Django, run in the open with
+            hundreds of contributors and a live production codebase. I joined as a backend intern
+            working directly in <code>mulearnbackend</code>, shipping features through the same PR
+            review process as the rest of the team rather than a sandboxed side-project.
+          </p>
+          <p class="exp-story">
+            My work centered on the company and mentor ecosystems: I built out the organisation
+            dashboard with new endpoints for feedback, collaboration requests, IG sponsorships and
+            event templates, and added RSVP / attendance analytics with learner satisfaction
+            metrics — plus rate-limiting on event creation to keep the system abuse-resistant.
+          </p>
+          <p class="exp-story">
+            On the mentor side, I designed the <code>MentorApplication</code> and
+            <code>MentorScopeGrant</code> models from scratch, exposed endpoints for mentors to
+            list, create and publish opportunities, and wrote Celery background jobs to
+            auto-expire stale applications and grants. I also handled image upload validation for
+            Interest Group cover/icon assets and project submissions across the platform.
+          </p>
+
+          <ul class="exp-highlights">
+            <li>Designed and shipped the mentor application &amp; scope-grant system end-to-end</li>
+            <li>Built company dashboard analytics: RSVP, attendance, and satisfaction metrics</li>
+            <li>Wrote scheduled Celery tasks for auto-expiry of mentor grants and job postings</li>
+            <li>Added rate limiting and image validation to harden existing API endpoints</li>
+          </ul>
+
+          <div class="table-wrap">
+            <table class="info-table">
+              <caption class="sr-only">Internship summary</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Organisation</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">Duration</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>µLearn — GTech µLearn Platform</td>
+                  <td>Backend Development Intern</td>
+                  <td>2026 — Present</td>
+                  <td>Django/Python backend work on the mentor system, company dashboard analytics, and scheduled Celery jobs.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <ul class="project-stack">
+            <li>Python</li><li>Django</li><li>Celery</li><li>REST APIs</li><li>MySQL</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+    <div class="container">
+      <h3 class="section-title" data-reveal><span class="num">04.</span> Education</h3>
+
+      <div class="table-wrap" data-reveal>
+        <table class="info-table">
+          <caption class="sr-only">Education history</caption>
+          <thead>
+            <tr>
+              <th scope="col">Institution</th>
+              <th scope="col">Degree</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mar Baselios College of Engineering and Technology</td>
+              <td>B.Tech — Computer Science &amp; Engineering</td>
+              <td>2023 — 2027 (Expected)</td>
+              <td>CGPA in progress</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h3 class="section-title" data-reveal><span class="num">05.</span> Selected Work</h3>
+
+      <!-- Filter buttons are generated from the unique tags in projectsData -->
+      <div class="project-filters" id="projectFilters" data-reveal></div>
+
+      <!-- Cards are rendered entirely by js/script.js from projectsData — see renderProjects() -->
+      <div class="projects-grid" id="projectsGrid" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h3 class="section-title center" data-reveal><span class="num">06.</span> Get In Touch</h3>
+      <p class="contact-lead" data-reveal>
+        I'm currently open to new opportunities and collaborations.
+        Whether you have a question or just want to say hi, my inbox is always open.
+      </p>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" data-reveal novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <label for="name">Your Name</label>
+              <span class="field-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <label for="email">Your Email</label>
+              <span class="field-error" id="emailError" role="alert"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+            <span class="field-error" id="messageError" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-aside" data-reveal>
+          <h4>Direct Contact</h4>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list-label">Email</span>
+              <a href="mailto:pranavp92075@gmail.com">pranavp92075@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-list-label">Phone</span>
+              <a href="tel:+919207513683">+91 92075 13683</a>
+            </li>
+            <li>
+              <span class="contact-list-label">Resume</span>
+              <a href="images/resume.pdf" download>Download PDF</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-socials">
+      <a href="https://github.com/DevWithPranav" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:pranavp92075@gmail.com" aria-label="Email">Email</a>
+    </div>
+    <p>Designed &amp; built by <a href="https://github.com/DevWithPranav" target="_blank" rel="noopener noreferrer" class="footer-credit">devwithpranav</a> — <span id="year"></span></p>
+  </div>
+</footer>
+
+<button type="button" class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
