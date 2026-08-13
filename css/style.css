@@ -44,6 +44,7 @@ body {
   line-height: 1.6;
   transition: background var(--transition), color var(--transition);
   overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 
 img { max-width: 100%; display: block; }
@@ -189,6 +190,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   gap: 3rem;
   width: 100%;
 }
+.hero-inner > * { min-width: 0; }
 
 .eyebrow {
   font-family: var(--font-head);
@@ -315,6 +317,7 @@ section { padding: 8rem 0; }
   gap: 4rem;
   align-items: start;
 }
+.about-grid > * { min-width: 0; }
 .about-text p {
   color: var(--text-muted);
   margin-bottom: 1.1rem;
@@ -452,6 +455,7 @@ section { padding: 8rem 0; }
   padding: 2.6rem;
   transition: border-color var(--transition), transform var(--transition);
 }
+.exp-card > * { min-width: 0; }
 .exp-card:hover { border-color: var(--text); }
 
 .exp-meta {
@@ -687,6 +691,7 @@ section { padding: 8rem 0; }
   gap: 3.5rem;
   align-items: start;
 }
+.contact-grid > * { min-width: 0; }
 .contact-form {
   display: flex;
   flex-direction: column;
