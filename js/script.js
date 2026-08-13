@@ -11,8 +11,7 @@
    8. Projects data + DOM rendering + tech filter
    9. Contact form — regex validation, inline errors
    10. Scroll-to-top button
-   11. Custom cursor
-   12. Footer year
+   11. Footer year
    ============================================================ */
 
 // ------------------------------------------------------------
@@ -464,28 +463,6 @@ scrollTopBtn.addEventListener('click', () => {
 });
 
 // ------------------------------------------------------------
-// 11. CUSTOM CURSOR
-// ------------------------------------------------------------
-const cursorDot = document.getElementById('cursorDot');
-if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-  window.addEventListener('mousemove', (e) => {
-    cursorDot.style.left = `${e.clientX}px`;
-    cursorDot.style.top = `${e.clientY}px`;
-  });
-
-  document.addEventListener('mouseover', (e) => {
-    if (e.target.closest('a, button, .project-card, .skill-card')) {
-      cursorDot.style.transform = 'translate(-50%, -50%) scale(2.5)';
-    }
-  });
-  document.addEventListener('mouseout', (e) => {
-    if (e.target.closest('a, button, .project-card, .skill-card')) {
-      cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
-    }
-  });
-}
-
-// ------------------------------------------------------------
-// 12. FOOTER YEAR
+// 11. FOOTER YEAR
 // ------------------------------------------------------------
 document.getElementById('year').textContent = new Date().getFullYear();
