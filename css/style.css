@@ -839,25 +839,6 @@ section { padding: 8rem 0; }
 .footer-credit:hover { text-decoration-color: var(--text); }
 
 /* ============================
-   CUSTOM CURSOR (desktop only)
-============================ */
-.cursor-dot {
-  position: fixed;
-  width: 8px;
-  height: 8px;
-  background: var(--text);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.15s ease, opacity 0.15s ease;
-  display: none;
-}
-@media (hover: hover) and (pointer: fine) {
-  .cursor-dot { display: block; }
-}
-
-/* ============================
    SCROLL-TO-TOP BUTTON
    (fixed positioning technique)
 ============================ */
